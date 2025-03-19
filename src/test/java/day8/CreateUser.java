@@ -21,13 +21,13 @@ public class CreateUser {
 		
 		
 
-	    Faker fake = new Faker();
+	    Faker fake1 = new Faker();
 	    JSONObject data = new JSONObject();
 
 	    // ✅ Correct field names (case-sensitive!)
-	    data.put("name", fake.name().firstName());
+	    data.put("name", fake1.name().firstName());
 	    data.put("gender", "male");
-	    data.put("email", fake.internet().emailAddress());
+	    data.put("email", fake1.internet().emailAddress());
 	    data.put("status", "inactive");
 
 	    String BearerToken = "74ec401457d0e2f5ef24188d54b7369b68a74f4b2a96c23c05e1f0b5098715aa";
